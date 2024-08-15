@@ -106,17 +106,8 @@ export default function MovieScreen() {
 
                 </Text>
 
-                <View style={{ alignItems: 'center', marginVertical: 10 }}>
-                    {/* <Text style={{
-                        color: '#FFD700', // Gold color for the rating
-                        fontSize: 20, // Increase font size
-                        fontWeight: 'bold', // Make the text bold
-                        paddingHorizontal: 8, // Padding around the text
-                        paddingVertical: 4,
-                        borderRadius: 5, // Rounded corners
-                    }}>
-                        {movie?.vote_average?.toFixed(1)} ⭐
-                    </Text> */}
+                {/* Rating */}
+                <View style={{ alignItems: 'center' }}>
                     <StarRating rating={movie?.vote_average || 0} />
                 </View>
                 {/* status, release , runtime */}
@@ -129,28 +120,28 @@ export default function MovieScreen() {
                     ) : null
                 }
 
-                {/* genres  */}
-                <View className="flex-row justify-center mx-4 space-x-2">
-                    {
-                        movie?.genres?.map((genre, index) => {
-                            let showDot = index + 1 != movie.genres.length;
-                            return (
-                                <Text key={index} className="text-neutral-400 font-semibold text-base text-center">
-                                    {genre?.name} {showDot ? "•" : null}
+
+
+                {/* description */}
+                <View className="mx-4 mt-2">
+                    <Text className="text-neutral-400 tracking-wide">
+                        {movie?.overview}
+                    </Text>
+                    {/* genres */}
+                    <Text className="text-neutral-400 tracking-wide mt-2">
+                        Genres: <Text className="text-neutral-400 mx-4 mt-1">
+                            {movie?.genres?.map((genre, index) => (
+                                <Text key={index}>
+                                    {genre?.name}{index + 1 < movie.genres.length ? ", " : ""}
                                 </Text>
-                            )
-                        })
-                    }
+                            ))}
+                        </Text>
+                    </Text>
+
                 </View>
 
 
 
-                {/* description */}
-                <Text className="text-neutral-400 mx-4 tracking-wide">
-                    {
-                        movie?.overview
-                    }
-                </Text>
 
             </View>
 

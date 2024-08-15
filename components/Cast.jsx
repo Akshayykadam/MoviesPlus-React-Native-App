@@ -31,11 +31,13 @@ export default function Cast({ navigation, cast }) {
                                 </View>
 
                                 <Text className="text-white text-xs mt-1">
-                                    {characterName.length > 10 ? characterName.slice(0, 10) + '...' : characterName}
+                                    {
+                                        person?.character.length > 10 ? person?.character.slice(0, 10) + '...' : person?.
+                                            character}
                                 </Text>
                                 <Text className="text-neutral-400 text-xs">
                                     {
-                                        personName.length > 10 ? personName.slice(0, 10) + '...' : personName
+                                        person?.original_name.length > 10 ? person?.original_name.slice(0, 10) + '...' : person?.original_name
                                     }
                                 </Text>
                             </TouchableOpacity>

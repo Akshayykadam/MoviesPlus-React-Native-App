@@ -33,7 +33,7 @@ export default function SeeAll() {
 
     return (
         <View className="bg-black flex-1">
-            <SafeAreaView className={ios ? "-mb-2" : "mb-3"}>
+            <SafeAreaView className={ios ? "mb-3" : "mb-3"}>
                 <View>
                     <TouchableOpacity
                         onPress={handleBackPress}
