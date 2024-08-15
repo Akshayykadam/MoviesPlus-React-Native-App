@@ -56,36 +56,9 @@ To run the Movies Plus App locally, follow these steps:
 
 > **Note**: Ensure you have Node.js, npm, and React Native CLI installed on your system. For iOS development, you need to have a Mac with Xcode installed.
 
-## Contributing
-
-We welcome contributions to Movies Plus App! If you would like to contribute, please follow these steps:
-
-1. **Fork the repository**.
-2. **Create a new branch**:
-    ```sh
-    git checkout -b feature/your-feature-name
-    ```
-
-3. **Make your changes**.
-4. **Commit your changes**:
-    ```sh
-    git commit -m 'Add some feature'
-    ```
-
-5. **Push to the branch**:
-    ```sh
-    git push origin feature/your-feature-name
-    ```
-
-6. **Open a pull request**.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
 ## Contact
 
-For any questions or suggestions, feel free to reach out to us at [your-email@example.com](mailto:your-email@example.com).
+For any questions or suggestions, feel free to reach out to us at [akshayykadam96@gmail.com](mailto:akshayykadam96@gmail.com).
 
 ---
 
